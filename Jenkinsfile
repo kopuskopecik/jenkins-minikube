@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                echo 'Deploying....'
+                bat "kubectl apply -f C:\Users\User\Desktop\Demo"
             }
         }
     }
