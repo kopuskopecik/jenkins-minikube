@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                bat 'kubectl version'
+                bat 'helm version'
             }
         }
     }
