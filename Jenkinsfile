@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                bat 'kubectl apply -f deployment.yaml --cluster minikube'
+                bat 'kubectl version'
             }
         }
     }
