@@ -4,12 +4,12 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                bat "docker version"
+                bat "docker build -t erdogansahin/hello:latest ."
             }
         }
-        stage('Test') {
+        stage('Push') {
             steps {
-                echo 'Testing..'
+                bat "docker push erdogansahin/hello:latest"
             }
         }
         stage('Deploy') {
