@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                bash 'kubectl apply -f C:/Users/User/Desktop/Demo --context minikube'
+                sh 'kubectl apply -f C:/Users/User/Desktop/Demo --context minikube'
             }
         }
     }
