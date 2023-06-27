@@ -17,5 +17,6 @@ pipeline {
                 bat 'helm install -f C:/Users/User/Desktop/Demo/mychart/values.yaml  myhelm C:/Users/User/Desktop/Demo/mychart/'
             }
         }
+        
     }
 }
