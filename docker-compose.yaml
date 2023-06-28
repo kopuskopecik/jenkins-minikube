@@ -1,0 +1,8 @@
+version: "3.7"
+
+services:
+  frontend:
+    image: erdogansahin/hello:latest
+    container_name: frontend
+    ports:
+      - 80:80
