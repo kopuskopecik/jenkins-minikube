@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                bat 'helm install -f C:/Users/User/Desktop/Demo/mychart/values.yaml  myhelm C:/Users/User/Desktop/Demo/mychart/'
+                bat "docker version"
             }
         }
         
