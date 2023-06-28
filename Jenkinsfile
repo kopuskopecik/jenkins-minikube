@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                bat "docker version"
+                bat "docker compose up --build -d"
             }
         }
         
